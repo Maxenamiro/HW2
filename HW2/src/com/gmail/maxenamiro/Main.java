@@ -1,8 +1,11 @@
+package com.gmail.maxenamiro;
+
 import java.util.Scanner;
 
 public class Main {
 
 	public static void main(String[] args) {
+
 		// знайти максимальне число з клавіатури
 		System.out.print("Введіть будь-яке ціле число: ");
 		Scanner scan = new Scanner(System.in);
@@ -54,7 +57,7 @@ public class Main {
 		double b = scan.nextInt();
 		System.out.println("Введіть третю сторону трикутника: ");
 		double c = scan.nextInt();
-		if ((a + b > c) || (a + c > b) || (c + b > a)) {
+		if ((a + b > c) && (a + c > b) && (c + b > a)) {
 			System.out.println("Такий трикутник існує");
 		} else {
 			System.out.println("Такого трикутника НЕ існує");
